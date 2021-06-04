@@ -16,13 +16,34 @@
  * Adds a random greeting to the page.
  */
 function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+    const greetings =
+        ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+    // Pick a random greeting.
+    const greeting = greetings[Math.floor(Math.random() * greetings.length)];
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+    // Add it to the page.
+    const greetingContainer = document.getElementById('greeting-container');
+    greetingContainer.innerHTML = greeting;
+    // greetingContainer.appendChild(greeting);
+}
+
+function myFavoriteQuotes() {
+    //my favorite motivational quotes
+    const quotes =
+        ['Do what you cant',
+            'Not everything that counts can be counted and not everything that can be counted counts',
+            'What you acheieve inwardly will change outer reality',
+            'The most important meeting you can have today, is with yourself, dont skip it!'
+        ];
+
+    // below function generates a random quote from the above quotes array
+
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+    //adding the quote to the page
+
+    const quotesBox = document.getElementById('quote-box');
+    quoteBox.innerText = quote;
+
 }
