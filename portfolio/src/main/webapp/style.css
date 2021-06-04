@@ -60,13 +60,20 @@ ul {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+    float: left;
+    margin: 20px 20px 0 0;
+    padding: 0 10px;
 }
 .profile-pic{
-    display: inline;
-    margin: 0 auto;
+    margin: 0 10px;
     margin-left: -25%;
     height: 100%;
-    width: auto;
+    width: auto; 
+
+    
+}
+article{
+    float: left;
 }
 
 footer {
