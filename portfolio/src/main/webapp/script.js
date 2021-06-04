@@ -47,3 +47,12 @@ function myFavoriteQuotes() {
     quoteBox.innerText = quote;
 
 }
+
+function changeContent() {
+    var heading = getElementById("intro");
+    heading.innerHTML = "My Projects";
+    var element = document.getElementById("id01");
+    element.innerHTML = "New Heading";
+}
+
+

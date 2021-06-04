@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #1b1717;
-  background: #eeebdd;
+  background: #e1f4f3;
 }
 
 #content {
@@ -37,7 +37,7 @@ body {
 	color:#009;
 }
 
-#mainMenu a:hover {
+#nav a:hover {
 	background-color:#009;
 	color:#fff;
 }
@@ -67,4 +67,11 @@ ul {
     margin-left: -25%;
     height: 100%;
     width: auto;
+}
+
+footer {
+  background-color: #333333;
+  padding: 10px;
+  text-align: center;
+  color: #e1f4f3;
 }
