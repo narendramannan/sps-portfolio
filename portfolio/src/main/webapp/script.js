@@ -48,11 +48,12 @@ function myFavoriteQuotes() {
 
 }
 
-function changeContent() {
-    var heading = getElementById("intro");
-    heading.innerHTML = "My Projects";
-    var element = document.getElementById("id01");
-    element.innerHTML = "New Heading";
+async function showQuote() {
+  const responseFromServer = await fetch('/hello');
+  const textFromResponse = await responseFromServer.text();
+
+  const quoteContainer = document.getElementById('quote-box');
+  quoteContainer.innerText = textFromResponse;
 }
 
 
