@@ -50,10 +50,12 @@ function myFavoriteQuotes() {
 
 async function showQuote() {
   const responseFromServer = await fetch('/hello');
-  const textFromResponse = await responseFromServer.text();
+  //const textFromResponse = await responseFromServer.text();
+  const quotesList = await responseFromServer.json();
 
   const quoteContainer = document.getElementById('quote-box');
-  quoteContainer.innerText = textFromResponse;
+  quoteContainer.innerText = quotesList[Math.floor(Math.random() * quotesList.length)];
+//   quoteContainer.appendChild(quotesList[Math.floor(Math.random() * quotesList.length)]);
 }
 
 
