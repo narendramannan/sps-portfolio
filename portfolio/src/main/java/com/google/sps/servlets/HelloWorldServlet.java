@@ -17,9 +17,9 @@ public class HelloWorldServlet extends HttpServlet {
     // response.setContentType("text/html;");
     // response.getWriter().println("Not everything that counts can be counted and, not everything that can be counted counts");
     String [] quotes = {
-        "Do what you cant",
+        "Do what you can\'t",
         "Not everything that counts can be counted and not everything that can be counted counts",
-        "What you acheieve inwardly will change outer reality",
+        "What you achieve inwardly will change outer reality",
         "The most important meeting you can have today, is with yourself, dont skip it!"
     };
     String json = convertToJsonUsingGson(quotes);
