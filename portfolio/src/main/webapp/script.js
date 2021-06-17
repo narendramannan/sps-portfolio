@@ -48,11 +48,14 @@ function myFavoriteQuotes() {
 
 }
 
-function changeContent() {
-    var heading = getElementById("intro");
-    heading.innerHTML = "My Projects";
-    var element = document.getElementById("id01");
-    element.innerHTML = "New Heading";
+async function showQuote() {
+  const responseFromServer = await fetch('/quotes');
+  //const textFromResponse = await responseFromServer.text();
+  const quotesList = await responseFromServer.json();
+
+  const quoteContainer = document.getElementById('quote-box');
+  quoteContainer.innerText = quotesList[Math.floor(Math.random() * quotesList.length)];
+//   quoteContainer.appendChild(quotesList[Math.floor(Math.random() * quotesList.length)]);
 }
 
 
