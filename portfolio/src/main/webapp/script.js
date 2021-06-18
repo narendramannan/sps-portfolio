@@ -49,7 +49,7 @@ function myFavoriteQuotes() {
 }
 
 async function showQuote() {
-  const responseFromServer = await fetch('/hello');
+  const responseFromServer = await fetch('/quotes');
   //const textFromResponse = await responseFromServer.text();
   const quotesList = await responseFromServer.json();
 
